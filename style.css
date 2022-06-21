@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;800;900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .dis::-webkit-scrollbar {
+          width: 7px;
+        }
+
+        .dis::-webkit-scrollbar-track {
+          background: #494949; 
+        }
+
+        .dis::-webkit-scrollbar-thumb {
+          border-radius: 20px;
+          background: linear-gradient(to top, #cc95c0, #dbd4b4, #7aa1d2);
+          transition: 0.9s; 
+        }        
+
+        .dis::-webkit-scrollbar-thumb:hover {
+          transition: 0.9s; 
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(130deg,#09ff90,#f090fd);
+            height: 100vh;
+        }
+        .calc{
+            width: 329px;
+            height: 506px;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 3px;
+            z-index: -1;
+            box-shadow:  0 0 10px #000;
+        }
+        .dis{
+            min-width: 310px;
+            height: 80px;
+            border: none;
+            margin: 3px;
+            text-align: right;
+            padding: 5px;
+            background:linear-gradient(130deg,#09ff90,#f090fd);
+            background-size: 600px;
+            display: inline-block;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow: scroll;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .buttons{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .button{
+            color: white;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            margin: 1px;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            font-size: 2em;
+            border: none;
+            transition: 0.6s;
+        }
+        .button:hover{
+            background-color: rgba(0, 0, 0, 0.55);
+        }
+        #eq{
+            background: #6cbb6c;
+        }
+        #ca{
+            background: #f47174;
+        }
+        h1{
+            font-family: 'Nunito', sans-serif;
+            letter-spacing: 15px;
+            font-size: 4vw;
+        }
